@@ -9,8 +9,8 @@ pages:
     paths:
       - node_modules/
   script:
-    - pnpm install
-    - pnpm build
+    - npm install
+    - npm run build
     - cp -a dist/. public/
   artifacts:
     paths:
