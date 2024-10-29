@@ -1,40 +1,14 @@
-import ls from 'localstorage-slim';
-import { useState } from 'react';
-import viteLogo from '/vite.svg';
-import reactLogo from './assets/react.svg';
-import './App.css';
-
-function updateCount(count: number): number {
-    ls.set('count', count + 1);
-
-    return count + 1;
-}
+import reactLogo from "./assets/banner.png";
+import "./App.css";
 
 function App() {
-    const storedCount = (ls.get('count') as number) || 0;
-    const [count, setCount] = useState<number>(storedCount);
-
-    return (
-        <>
-            <div>
-                <a href='https://vite.dev' target='_blank' rel='noreferrer'>
-                    <img src={viteLogo} className='logo' alt='Vite logo' />
-                </a>
-                <a href='https://react.dev' target='_blank' rel='noreferrer'>
-                    <img src={reactLogo} className='logo react' alt='React logo' />
-                </a>
-            </div>
-            <h1>Vite + React</h1>
-            <div className='card'>
-                <button
-                    type='button'
-                    onClick={() => setCount((count: number) => updateCount(count))}
-                >
-                    count is {count}
-                </button>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <div>
+        <img src={reactLogo} className="banner" alt="React logo" />
+      </div>
+    </>
+  );
 }
 
 export default App;
