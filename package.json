@@ -1,10 +1,10 @@
 {
-  "name": "money-map",
+  "name": "good-game.pro",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "settings": {
-    "name": "MoneyMap"
+    "name": "Good Game"
   },
   "scripts": {
     "start": "vite",
